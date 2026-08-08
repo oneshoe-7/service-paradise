@@ -13,7 +13,7 @@ function Cart() {
 
   return (
     <div className="cart-page">
-      <h1>Your Cart</h1>
+      <h1>Your cart</h1>
       {selectedKeys.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (

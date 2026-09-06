@@ -4,7 +4,7 @@ import JobsAvailable from './JobsAvailable.jsx'
 import Navbar from './Navbar.jsx'
 import bgImage from './assets/604115737561443354.jpg'
 import Submit from'./Submit.jsx'
-import Cart from './Cart.jsx'
+import Cart from './cart.jsx'
 import './App.css'
 
 function Page(){

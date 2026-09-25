@@ -44,7 +44,7 @@ function CustomerService() {
   const totalItems = Object.values(quantities).reduce((sum, q) => sum + q, 0);
 
   const viewCart = () => {
-    navigate("/cart", { state: { quantities, serviceInfo } });
+    navigate("/Cart", { state: { quantities, serviceInfo } });
   };
 
   return (

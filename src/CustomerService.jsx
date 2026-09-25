@@ -44,38 +44,62 @@ function CustomerService() {
   const totalItems = Object.values(quantities).reduce((sum, q) => sum + q, 0);
 
   const viewCart = () => {
-    navigate("/cart", { state: { quantities, serviceInfo } });
+    navigate("/Cart", { state: { quantities, serviceInfo } });
   };
 
   return (
     <div className="cs">
-      <h1 className="head">List of Services we provide</h1>
-      <div className="parent">
-        <div className="ser1">
-          <img src="/repair.jpg" className="ser-img1" alt="Repair and Maintenance" />
-          <span className="ser-text1">Repair and Maintenance</span>
-          <p className="info1">Price = $50</p>
-          {renderButton("ser1")}
-        </div>
-        <div className="ser2">
-          <img src="/cleaning.jpg" className="ser-img2" alt="Cleaning" />
-          <span className="ser-text2">Cleaning and Help</span>
-          <p className="info2">Price = $35</p>
-          {renderButton("ser2")}
-        </div>
-        <div className="ser3">
-          <img src="/construction.jpg" className="ser-img3" alt="Renovation and Construction" />
-          <span className="ser-text3">Renovation and Construction</span>
-          <p className="info3">Price = $60</p>
-          {renderButton("ser3")}
-        </div>
-        <div className="ser4">
-          <img src="/installation.jpg" className="ser-img4" alt="Installation" />
-          <span className="ser-text4">Installation and Help</span>
-          <p className="info4">Price = $25</p>
-          {renderButton("ser4")}
-        </div>
-      </div>
+    <div className="head-wrapper">
+  <span className="head-tag">✦ Trusted by 2,000+ customers</span>
+  <h1 className="head">List of <span className="accent">Services</span> we provide</h1>
+  <p className="head-subtitle">Reliable home and repair services, booked in minutes</p>
+</div>
+       
+    <div className="parent">
+  <div className="ser1">
+    <div className="ser-text-block">
+      <span className="ser-text1">Repair and Maintenance</span>
+      <p className="info1">Price = $50</p>
+      {renderButton("ser1")}
+    </div>
+    <div className="ser-img-wrap">
+      <img src="/electrical.jpg" className="ser-img1" alt="Repair and Maintenance" />
+    </div>
+  </div>
+
+  <div className="ser2">
+    <div className="ser-text-block">
+      <span className="ser-text2">Cleaning and Help</span>
+      <p className="info2">Price = $35</p>
+      {renderButton("ser2")}
+    </div>
+    <div className="ser-img-wrap">
+      <img src="/cleaning.jpg" className="ser-img2" alt="Cleaning" />
+    </div>
+  </div>
+
+  <div className="ser3">
+    <div className="ser-text-block">
+      <span className="ser-text3">Renovation and Construction</span>
+      <p className="info3">Price = $60</p>
+      {renderButton("ser3")}
+    </div>
+    <div className="ser-img-wrap">
+      <img src="/reforma integr.jpg" className="ser-img3" alt="Renovation and Construction" />
+    </div>
+  </div>
+
+  <div className="ser4">
+    <div className="ser-text-block">
+      <span className="ser-text4">Installation and Help</span>
+      <p className="info4">Price = $25</p>
+      {renderButton("ser4")}
+    </div>
+    <div className="ser-img-wrap">
+      <img src="/Astrology.jpg" className="ser-img4" alt="Installation" />
+    </div>
+  </div>
+</div>
 
       {totalItems > 0 && (
         <button className="cart-btn" onClick={viewCart}>

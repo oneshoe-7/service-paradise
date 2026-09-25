@@ -2,9 +2,9 @@ import{Routes,Route,Link} from'react-router-dom'
 import CustomerService from './CustomerService.jsx'
 import JobsAvailable from './JobsAvailable.jsx'
 import Navbar from './Navbar.jsx'
-import bgImage from './assets/ser.jpg'
+import bgImage from './assets/604115737561443354.jpg'
 import Submit from'./Submit.jsx'
-import Cart from './cart.jsx'
+   import Cart from './Cart.jsx'
 import './App.css'
 
 function Page(){
@@ -36,7 +36,7 @@ function App(){
       <Route path="/customer-service" element={<CustomerService />} />
       <Route path="/Jobs-Available" element={<JobsAvailable />} />
       <Route path="/Submit" element={<Submit/>} />
-      <Route path="/Cart" element={<cart />} />
+      <Route path="/cart" element={<Cart />} />
     </Routes>
   )
 }

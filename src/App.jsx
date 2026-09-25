@@ -4,7 +4,7 @@ import JobsAvailable from './JobsAvailable.jsx'
 import Navbar from './Navbar.jsx'
 import bgImage from './assets/604115737561443354.jpg'
 import Submit from'./Submit.jsx'
-import Cart from './Cart.jsx'
+import cart from './cart.jsx'
 import './App.css'
 
 function Page(){
@@ -36,7 +36,7 @@ function App(){
       <Route path="/customer-service" element={<CustomerService />} />
       <Route path="/Jobs-Available" element={<JobsAvailable />} />
       <Route path="/Submit" element={<Submit/>} />
-      <Route path="/Cart" element={<Cart />} />
+      <Route path="/cart" element={<cart />} />
     </Routes>
   )
 }
